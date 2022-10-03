@@ -140,20 +140,43 @@ section#testimonials {
     Section Benefits
 ----------------------*/
 
-#benefits .col {
-    
+section#benefits {
+    background-color: var(--bg-second);
+    text-align: center;
 }
-
+#benefits .col {
+    width: 100%;
+}
+#benefits .card {
+    background-color: white;
+    margin: .625rem;  
+    text-align: left;
+}
+#benefits .card h2, #benefits .card h3 {
+    color: var(--bg-second);
+}
+#benefits .card p {
+    color: var(--secondary-first);
+}
+#benefits .card button {
+    background-color: var(--bg-second);
+    color: white;
+    padding: 0.625rem 2.5rem;
+}
 /*------ RESPONSIVE mob-first ------*/
 
 /* tablet view */
 @media screen and (min-width: 768px) {
-    
+    #benefits .col {
+        width: calc( 100% / 2 - 1.25rem);
+    }
 }
 
 /* desktop view */
 @media screen and (min-width: 992px) {
-    
+    #benefits .col {
+        width: calc( 100% / 3 - 1.25rem);
+    }
 }
 
 /*----------------------
