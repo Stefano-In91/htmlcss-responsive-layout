@@ -88,21 +88,52 @@ section#strategic{
 /*----------------------
     Section Testimonials
 ----------------------*/
-
-#testimonials .col {
-    
+section#testimonials {
+    text-align: center;
 }
-
+#testimonials h4, #testimonials .container > p {
+    color: black;
+}
+#testimonials h2 {
+    color: var(--bg-second);
+}
+#testimonials .card {
+    background-color: var(--bg-second);
+    margin: .625rem 0;    
+}
+#testimonials .container > .row {
+    justify-content: center;
+}
+#testimonials .col {
+    width: 100%;
+}
+#testimonials .card-img, #testimonials .card-text {
+    width: 100%;
+}
 /*------ RESPONSIVE mob-first ------*/
 
 /* tablet view */
 @media screen and (min-width: 768px) {
-    
+    #testimonials .card.row {
+        align-items: center;
+    }
+    #testimonials .card-img {
+        width: 30%;
+    }
+    #testimonials .card-text {
+        width: 70%;
+        text-align: left;
+    }
 }
 
 /* desktop view */
 @media screen and (min-width: 992px) {
-    
+    #testimonials .card-img {
+        width: 15%;
+    }
+    #testimonials .card-text {
+        width: 85%;
+    }
 }
 
 /*----------------------
