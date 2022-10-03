@@ -6,7 +6,7 @@
     Section Highlights
 ----------------------*/
 
-#highlights h1, #highlights h2, #highlights h3 {
+#highlights h1, #highlights h2, #highlights h3, #highlights .card > i {
     color: var(--bg-first);
 }
 #highlights p {
@@ -22,9 +22,15 @@
 }
 #highlights .col:first-child .card {
     text-align: left;
+}
 
-    display: flex;
-    flex-direction: column;
+#highlights button {
+    background-color: var(--bg-first);
+    color: white;
+    padding: 0.625rem 2.5rem;
+}
+#highlights button i {
+    padding-right: 4px;
 }
 /*------ RESPONSIVE mob-first ------*/
 
@@ -40,10 +46,12 @@
 
 /* desktop view */
 @media screen and (min-width: 992px) {
-    #highlights .col:first-child .card {
-        flex-direction: row;
+    #highlights .card-text, #highlights .card-img {
+        width: 50%;
     }
-    
+    #highlights .card-img {
+        align-self: flex-end;
+    }
 }
 
 /*----------------------

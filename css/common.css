@@ -36,6 +36,9 @@ section {
     padding: 0.625rem;
 }
 
+.card {
+    border-radius: 40px;
+}
 /*----------------------
     Buttons
 ----------------------*/
