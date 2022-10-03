@@ -1,0 +1,40 @@
+/*-----------
+    COMMON
+-----------*/
+section {
+    padding: 1.875rem;
+}
+.container {
+    max-width: 68.75rem;
+    margin: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+/*----------------------
+    Flex
+----------------------*/
+.flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.items-end {
+    align-items: flex-end;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.625rem;
+    margin-right: -0.625rem;
+}
+.col {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+}
+
+/*----------------------
+    Buttons
+----------------------*/

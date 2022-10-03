@@ -1,0 +1,14 @@
+/*--------------
+    VARIABLES
+--------------*/
+:root {
+    --bg-first: #0084fd;
+    --col-first: #0084fd;
+    --secondary-first: #5a6e7f;
+
+    --bg-second: #9792e4;
+    --col-second: #9792e4;
+    --secondary-second: #fdc15f;
+
+    --bg-footer: #333333;
+}
