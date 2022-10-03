@@ -1,6 +1,9 @@
 /*-----------
     COMMON
 -----------*/
+body {
+    color: white;
+}
 section {
     padding: 1.875rem;
 }
@@ -10,7 +13,6 @@ section {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
 }
-
 /*----------------------
     Flex
 ----------------------*/
@@ -38,3 +40,9 @@ section {
 /*----------------------
     Buttons
 ----------------------*/
+button {
+    border: none;
+    border-radius: 20px;
+    padding: .625rem;
+    cursor: pointer;
+}

@@ -14,7 +14,12 @@
 
 /* tablet view */
 @media screen and (mid-width: 768px) {
-    
+    #highlights .col {
+        width: calc( 100% / 3 );
+    }
+    #highlights .col:first-child {
+        width: calc( (100% / 3) * 2 );
+    }
 }
 
 /* desktop view */
