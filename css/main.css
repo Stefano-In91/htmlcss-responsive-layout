@@ -6,14 +6,30 @@
     Section Highlights
 ----------------------*/
 
+#highlights h1, #highlights h2, #highlights h3 {
+    color: var(--bg-first);
+}
+#highlights p {
+    color: var(--secondary-first);
+}
 #highlights .col {
     width: 100%;
 }
+#highlights .card {
+    background-color: var(--col-first);
+    padding: 1.875rem;
+    text-align: center;
+}
+#highlights .col:first-child .card {
+    text-align: left;
 
+    display: flex;
+    flex-direction: column;
+}
 /*------ RESPONSIVE mob-first ------*/
 
 /* tablet view */
-@media screen and (mid-width: 768px) {
+@media screen and (min-width: 768px) {
     #highlights .col {
         width: calc( 100% / 3 );
     }
@@ -24,6 +40,9 @@
 
 /* desktop view */
 @media screen and (min-width: 992px) {
+    #highlights .col:first-child .card {
+        flex-direction: row;
+    }
     
 }
 
@@ -38,7 +57,7 @@
 /*------ RESPONSIVE mob-first ------*/
 
 /* tablet view */
-@media screen and (mid-width: 768px) {
+@media screen and (min-width: 768px) {
     
 }
 
@@ -58,7 +77,7 @@
 /*------ RESPONSIVE mob-first ------*/
 
 /* tablet view */
-@media screen and (mid-width: 768px) {
+@media screen and (min-width: 768px) {
     
 }
 
@@ -78,7 +97,7 @@
 /*------ RESPONSIVE mob-first ------*/
 
 /* tablet view */
-@media screen and (mid-width: 768px) {
+@media screen and (min-width: 768px) {
     
 }
 
@@ -98,7 +117,7 @@
 /*------ RESPONSIVE mob-first ------*/
 
 /* tablet view */
-@media screen and (mid-width: 768px) {
+@media screen and (min-width: 768px) {
     
 }
 
@@ -118,7 +137,7 @@
 /*------ RESPONSIVE mob-first ------*/
 
 /* tablet view */
-@media screen and (mid-width: 768px) {
+@media screen and (min-width: 768px) {
     
 }
 
