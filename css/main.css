@@ -58,20 +58,31 @@
     Section Strategic
 ----------------------*/
 
+section#strategic{
+    background-color: var(--bg-second);
+}
 #strategic .col {
-    
+    width: 100%;
 }
-
+#strategic .col.card {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+#strategic button {
+    background-color: var(--bg-second);
+}
 /*------ RESPONSIVE mob-first ------*/
-
-/* tablet view */
-@media screen and (min-width: 768px) {
-    
-}
 
 /* desktop view */
 @media screen and (min-width: 992px) {
-    
+    #strategic .row {
+        justify-content: center;
+        align-items: flex-end;
+    }
+    #strategic .col {
+        width: 40%;
+    }
 }
 
 /*----------------------
