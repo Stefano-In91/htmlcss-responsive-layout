@@ -29,9 +29,6 @@
     color: white;
     padding: 0.625rem 2.5rem;
 }
-#highlights button i {
-    padding-right: 4px;
-}
 /*------ RESPONSIVE mob-first ------*/
 
 /* tablet view */
@@ -70,7 +67,7 @@ section#strategic{
     text-align: center;
 }
 #strategic button {
-    background-color: var(--bg-second);
+    color: black;
 }
 /*------ RESPONSIVE mob-first ------*/
 
@@ -158,11 +155,6 @@ section#benefits {
 #benefits .card p {
     color: var(--secondary-first);
 }
-#benefits .card button {
-    background-color: var(--bg-second);
-    color: white;
-    padding: 0.625rem 2.5rem;
-}
 /*------ RESPONSIVE mob-first ------*/
 
 /* tablet view */
@@ -182,21 +174,44 @@ section#benefits {
 /*----------------------
     Section About-Us
 ----------------------*/
-
-#about-us .col {
-    
+#about-us h2, #about-us h3, #about-us i {
+    color: var(--bg-second);
 }
-
+#about-us p {
+    color: black;
+}
+#about-us .col {
+    width: 100%;
+}
+#about-us .card-img {
+    width: 50%;
+}
 /*------ RESPONSIVE mob-first ------*/
 
 /* tablet view */
 @media screen and (min-width: 768px) {
-    
+    #about-us .row {
+        justify-content: space-between;
+    }
+    #about-us .col:first-child {
+        width: 55%;
+    }
+    #about-us .col:last-child {
+        width: 40%;
+    }
+    #about-us .card-img {
+        width: 100%;
+    }
 }
 
 /* desktop view */
 @media screen and (min-width: 992px) {
-    
+    #about-us .col:first-child {
+        width: 70%;
+    }
+    #about-us .col:last-child {
+        width: 25%;
+    }
 }
 
 /*----------------------

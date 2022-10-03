@@ -51,3 +51,13 @@ button {
     padding: .625rem;
     cursor: pointer;
 }
+button i {
+    padding-right: 4px;
+}
+.spaced {
+    padding: 0.625rem 2.5rem;
+}
+.purple {
+    background-color: var(--bg-second);
+    color: white;
+}
