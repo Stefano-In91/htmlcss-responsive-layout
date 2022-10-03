@@ -54,10 +54,6 @@
 /*----------------------
     Section Strategic
 ----------------------*/
-
-section#strategic{
-    background-color: var(--bg-second);
-}
 #strategic .col {
     width: 100%;
 }
@@ -136,9 +132,7 @@ section#testimonials {
 /*----------------------
     Section Benefits
 ----------------------*/
-
 section#benefits {
-    background-color: var(--bg-second);
     text-align: center;
 }
 #benefits .col {
@@ -217,19 +211,12 @@ section#benefits {
 /*----------------------
     Section Get-Started
 ----------------------*/
-
-#get-started .col {
-    
+section#get-started {
+    text-align: center;
 }
-
-/*------ RESPONSIVE mob-first ------*/
-
-/* tablet view */
-@media screen and (min-width: 768px) {
-    
+#get-started .container div:first-of-type {
+    color: var(--secondary-second);
 }
-
-/* desktop view */
-@media screen and (min-width: 992px) {
-    
+#get-started a {
+    color: inherit;
 }

@@ -16,6 +16,10 @@ section {
 img {
     width: 100%;
 }
+.purple {
+    background-color: var(--bg-second);
+    color: white;
+}
 /*----------------------
     Flex
 ----------------------*/
@@ -56,8 +60,4 @@ button i {
 }
 .spaced {
     padding: 0.625rem 2.5rem;
-}
-.purple {
-    background-color: var(--bg-second);
-    color: white;
 }
