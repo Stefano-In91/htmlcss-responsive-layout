@@ -13,9 +13,6 @@
     color: var(--secondary-first);
 
 }
-#highlights .container .row {
-    align-items: stretch;
-}
 #highlights .col {
     width: 100%;
 }
@@ -23,6 +20,7 @@
     background-color: var(--col-first);
     padding: 1.875rem;
     text-align: center;
+    height: 100%;
 }
 #highlights .col:first-child .card {
     text-align: left;
@@ -110,6 +108,9 @@ section#testimonials {
 }
 #testimonials .card-img, #testimonials .card-text {
     width: 100%;
+}
+#testimonials span {
+    font-weight: bold;
 }
 /*------ RESPONSIVE mob-first ------*/
 
