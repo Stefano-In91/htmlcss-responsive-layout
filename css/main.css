@@ -16,6 +16,9 @@
 #highlights .col {
     width: 100%;
 }
+#highlights div.card.row {
+    margin: 0;
+}
 #highlights .card {
     background-color: var(--col-first);
     padding: 1.875rem;
@@ -43,7 +46,7 @@
         width: calc( 100% / 3 );
     }
     #highlights .col:first-child {
-        width: calc( (100% / 3) * 2 );
+        width: calc( (100% / 3) * 2);
     }
 }
 
