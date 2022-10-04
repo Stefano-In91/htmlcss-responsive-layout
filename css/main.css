@@ -11,6 +11,10 @@
 }
 #highlights p {
     color: var(--secondary-first);
+
+}
+#highlights .container .row {
+    align-items: stretch;
 }
 #highlights .col {
     width: 100%;
@@ -28,6 +32,10 @@
     background-color: var(--bg-first);
     color: white;
     padding: 0.625rem 2.5rem;
+}
+#highlights .card > i {
+    font-size: 6rem;
+    padding-bottom: 1.875rem;
 }
 /*------ RESPONSIVE mob-first ------*/
 

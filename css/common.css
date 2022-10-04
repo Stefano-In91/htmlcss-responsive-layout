@@ -20,6 +20,12 @@ img {
     background-color: var(--bg-second);
     color: white;
 }
+h2, h3, h4, h5 {
+    padding-bottom: 1.875rem;
+}
+.mtop30 {
+    margin-top: 1.875rem;
+}
 /*----------------------
     Flex
 ----------------------*/
