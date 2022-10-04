@@ -28,7 +28,6 @@
 #highlights .col:first-child .card {
     text-align: left;
 }
-
 #highlights button {
     background-color: var(--bg-first);
     color: white;
@@ -37,6 +36,12 @@
 #highlights .card > i {
     font-size: 6rem;
     padding-bottom: 1.875rem;
+}
+#highlights .card-img img {
+    max-width: 275px;
+    display: block;
+    position: relative;
+    bottom: -30px;
 }
 /*------ RESPONSIVE mob-first ------*/
 
@@ -73,6 +78,13 @@
 }
 #strategic button {
     color: black;
+    border-radius: 100%;
+}
+#strategic .row .col:first-child img {
+    margin-bottom: 3.125rem;
+}
+#strategic button i {
+    padding: 4px;
 }
 /*------ RESPONSIVE mob-first ------*/
 
@@ -84,6 +96,10 @@
     }
     #strategic .col {
         width: 40%;
+    }
+    #strategic .row .col:last-child img {
+        width: 60%;
+        margin-bottom: 1.875rem;
     }
 }
 
@@ -109,11 +125,24 @@ section#testimonials {
 #testimonials .col {
     width: 100%;
 }
-#testimonials .card-img, #testimonials .card-text {
+#testimonials .card-text {
     width: 100%;
+}
+#testimonials .card-img {
+    width: 100%;
+}
+#testimonials .card-img img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 #testimonials span {
     font-weight: bold;
+    text-transform: uppercase;
+}
+#testimonials p {
+    padding: 1.25rem 0;
 }
 /*------ RESPONSIVE mob-first ------*/
 
@@ -122,22 +151,20 @@ section#testimonials {
     #testimonials .card.row {
         align-items: center;
     }
-    #testimonials .card-img {
-        width: 30%;
-    }
     #testimonials .card-text {
         width: 70%;
         text-align: left;
+    }
+    #testimonials .card-img {
+        width: 200px;
     }
 }
 
 /* desktop view */
 @media screen and (min-width: 992px) {
-    #testimonials .card-img {
-        width: 15%;
-    }
     #testimonials .card-text {
-        width: 85%;
+        width: 75%;
+        text-align: left;
     }
 }
 
@@ -153,13 +180,18 @@ section#benefits {
 #benefits .card {
     background-color: white;
     margin: .625rem;  
+    padding: 1.875rem;
     text-align: left;
 }
-#benefits .card h2, #benefits .card h3 {
+#benefits .card h2, #benefits .card h3, #benefits .card span {
     color: var(--bg-second);
 }
 #benefits .card p {
     color: var(--secondary-first);
+}
+#benefits .card span {
+    font-size: 3.125rem;
+    font-weight: bold;
 }
 /*------ RESPONSIVE mob-first ------*/
 
@@ -180,17 +212,34 @@ section#benefits {
 /*----------------------
     Section About-Us
 ----------------------*/
-#about-us h2, #about-us h3, #about-us i {
+#about-us h2, #about-us h3, #about-us .card-img i {
     color: var(--bg-second);
+}
+#about-us h2 {
+    font-size: 3rem;
 }
 #about-us p {
     color: black;
+    margin: 1.875rem 0;
 }
 #about-us .col {
     width: 100%;
 }
-#about-us .card-img {
-    width: 50%;
+#about-us .col.flex {
+    flex-direction: column;
+}
+#about-us .card-img img {
+    border-radius: 100%;
+}
+#about-us .card-img i {
+    font-size: 4.6875rem;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#about-us div.card-img {
+    max-width: 250px;
+    position: relative;
 }
 /*------ RESPONSIVE mob-first ------*/
 
@@ -205,9 +254,6 @@ section#benefits {
     #about-us .col:last-child {
         width: 40%;
     }
-    #about-us .card-img {
-        width: 100%;
-    }
 }
 
 /* desktop view */
@@ -216,7 +262,7 @@ section#benefits {
         width: 70%;
     }
     #about-us .col:last-child {
-        width: 25%;
+        width: 30%;
     }
 }
 
@@ -226,9 +272,25 @@ section#benefits {
 section#get-started {
     text-align: center;
 }
+#get-started h4{
+    color: #d5d4f4;
+}
 #get-started .container div:first-of-type {
     color: var(--secondary-second);
 }
 #get-started a {
     color: inherit;
+}
+#get-started .container div:first-of-type {
+    font-size: 4.6875rem;
+}
+#get-started i {
+    font-size: 0.25rem;
+    vertical-align: middle;
+}
+#get-started button {
+    color: var(--bg-second);
+    padding: 1.25rem 3.75rem;
+    border-radius: 2.5rem;
+    font-weight: bold;
 }

@@ -60,6 +60,8 @@ button {
     border-radius: 20px;
     padding: .625rem;
     cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
 }
 button i {
     padding-right: 4px;
