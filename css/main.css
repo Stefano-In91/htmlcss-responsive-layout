@@ -132,10 +132,10 @@ section#testimonials {
     width: 100%;
 }
 #testimonials .card-img img {
-    height: 200px;
     width: 200px;
     border-radius: 50%;
     object-fit: cover;
+    aspect-ratio: 1;
 }
 #testimonials span {
     font-weight: bold;
