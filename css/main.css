@@ -31,7 +31,6 @@
 #highlights button {
     background-color: var(--bg-first);
     color: white;
-    padding: 0.625rem 2.5rem;
 }
 #highlights .card > i {
     font-size: 6rem;
