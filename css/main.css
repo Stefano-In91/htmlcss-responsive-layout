@@ -229,6 +229,7 @@ section#benefits {
 }
 #about-us .card-img img {
     border-radius: 100%;
+    aspect-ratio: 1;
 }
 #about-us .card-img i {
     font-size: 4.6875rem;
